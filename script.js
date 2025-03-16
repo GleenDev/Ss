@@ -1,4 +1,7 @@
-function toggleMenu() {
-    const nav = document.querySelector('.nav-links');
-    nav.classList.toggle('show');
-}
+// Toggle menu untuk mobile
+const mobileMenu = document.getElementById("mobile-menu");
+const navList = document.querySelector(".nav-list");
+
+mobileMenu.addEventListener("click", () => {
+    navList.classList.toggle("active");
+});
