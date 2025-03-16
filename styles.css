@@ -47,7 +47,7 @@ body {
 .hero {
     text-align: center;
     padding: 80px 20px;
-    background: url('https://i.imgur.com/v5bUUk8.jpg') center/cover no-repeat;
+    background-color: #222;
 }
 
 .hero h1 {
@@ -76,11 +76,6 @@ body {
     width: 300px;
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
     transition: transform 0.3s;
-}
-
-.card img {
-    width: 100%;
-    border-radius: 10px;
 }
 
 .card:hover {
