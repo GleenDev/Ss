@@ -1,183 +1,30 @@
-/* Reset Dasar */
 body {
+    background-color: #0d1117;
+    color: #c9d1d9;
+    font-family: Arial, sans-serif;
     margin: 0;
-    font-family: 'Inter', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    transition: 0.3s;
+    padding: 0;
 }
 
-/* Navbar */
-.navbar {
-    background: #111;
+header {
+    background-color: #161b22;
     padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: white;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
 }
 
-.logo {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.menu-toggle {
-    font-size: 24px;
-    cursor: pointer;
-    display: none;
-}
-
-.nav-list {
+nav ul {
     list-style: none;
     padding: 0;
-    display: flex;
-    gap: 20px;
 }
 
-.nav-list li {
+nav ul li {
     display: inline;
+    margin-right: 15px;
 }
 
-.nav-list a {
+nav ul li a {
+    color: #58a6ff;
     text-decoration: none;
-    color: white;
-    transition: 0.3s;
-}
-
-.nav-list a:hover {
-    color: #00d4ff;
-}
-
-/* Tombol Mode Gelap */
-.theme-toggle {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-/* Hero Section */
-.hero {
-    text-align: center;
-    padding: 80px 20px;
-    background: linear-gradient(to right, #000, #333);
-    color: white;
-}
-
-.hero h1 {
-    font-size: 40px;
-}
-
-.cta-button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background: #00d4ff;
-    color: black;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-.cta-button:hover {
-    background: #009ec3;
-}
-
-/* Konten */
-.content {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    padding: 20px;
-}
-
-.card {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    width: 300px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s;
-}
-
-.card:hover {
-    transform: scale(1.05);
-}
-
-/* Tombol Scroll ke Atas */
-#scrollToTop {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: none;
-    background: #00d4ff;
-    border: none;
-    color: black;
-    padding: 10px 15px;
-    cursor: pointer;
-    border-radius: 50%;
-    font-size: 20px;
-}
-
-#scrollToTop:hover {
-    background: #009ec3;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 15px;
-    background-color: black;
-    color: white;
-}
-
-/* Mode Gelap */
-.dark-mode {
-    background-color: #111;
-    color: white;
-}
-
-.dark-mode .card {
-    background: #222;
-}
-
-.dark-mode .navbar {
-    background: #222;
-}
-
-.dark-mode .theme-toggle {
-    color: #00d4ff;
-}
-
-/* Responsif */
-@media screen and (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-    }
-
-    .nav-list {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        background: black;
-        width: 100%;
-        top: 60px;
-        left: 0;
-        text-align: center;
-    }
-
-    .nav-list li {
-        padding: 10px 0;
-    }
-
-    .nav-list.active {
-        display: flex;
-    }
 }
